@@ -62,13 +62,13 @@ npm run dev
 
 ```bash
 # build da imagem e subida dos containers
-docker compose -f docker/docker-compose.yml up --build -d
+docker compose up -d --build
 
-# logs em tempo real
-docker compose -f docker/docker-compose.yml logs -f api
+# logs
+docker logs cera-backend
 
 # parar e remover
-docker compose -f docker/docker-compose.yml down
+docker compose down
 ```
 
 Containers criados:
